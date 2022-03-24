@@ -1,0 +1,28 @@
+.button {
+    -fx-font-family: "Arial";
+    -fx-text-fill: 13;
+}
+
+.table-view {
+    -fx-background-color: #EBE9E4;
+}
+
+.table-column {
+    -fx-background-color: #B2CAD8;
+    -fx-font-family: "Arial";
+}
+
+.table-row-cell{
+    -fx-border-color: #EBE9E4;
+    -fx-table-cell-border-color:#EBE9E4;
+    -fx-border-width: 0px 0px 0 px 0px;
+}
+
+
+.text-field {
+    -fx-background-color: #EBE9E4;
+}
+.label {
+    -fx-font-family: Arial;
+    -fx-font-size: inherit;
+}

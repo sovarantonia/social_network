@@ -1,0 +1,31 @@
+.bar {
+    -fx-background-image: url('../images/sidebar2.jpg');
+}
+
+.button {
+    -fx-font-family: "Arial";
+    -fx-text-fill: inherit;
+}
+
+.table-view {
+    -fx-background-color: #EBE9E4;
+}
+
+.table-column {
+    -fx-background-color: #B2CAD8;
+    -fx-font-family: "Arial";
+}
+
+.table-row{
+    -fx-background-color: #EBE9E4;
+}
+
+.text-field {
+    -fx-background-color: #EBE9E4;
+}
+
+.label {
+    -fx-font-family: Arial;
+    -fx-font-size: inherit;
+    -fx-text-fill: inherit;
+}

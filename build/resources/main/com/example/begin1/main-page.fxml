@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="578.0" prefWidth="788.0" style="-fx-background-color: #D7E0E6;"
+            stylesheets="@../../../models/main-page.css" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainPageController">
+    <children>
+        <AnchorPane prefHeight="578.0" prefWidth="170.0" styleClass="bar" stylesheets="@../../../models/main-page.css">
+            <children>
+                <Button layoutX="32.0" layoutY="466.0" mnemonicParsing="false" onAction="#handleFriendshipRequests"
+                        prefHeight="26.0" prefWidth="105.0" text="Friend requests"/>
+                <Button fx:id="sendRequestButton" layoutX="32.0" layoutY="411.0" mnemonicParsing="false"
+                        onAction="#handleSendFriendshipRequest" text="Add to friend list"/>
+                <Button fx:id="logoutButton" layoutX="9.0" layoutY="537.0" mnemonicParsing="false"
+                        onAction="#handleLogoutButton" prefHeight="26.0" prefWidth="152.0" text="Logout"
+                        textFill="#f70707"/>
+                <Button fx:id="sendMessageOption" layoutX="14.0" layoutY="131.0" mnemonicParsing="false"
+                        onAction="#handleSendAMessage" prefHeight="26.0" prefWidth="142.0" text="Send a message"/>
+                <Button fx:id="conversationHistoryOption" layoutX="13.0" layoutY="188.0" mnemonicParsing="false"
+                        onAction="#handleConversationHistory" prefHeight="27.0" prefWidth="142.0"
+                        text="Conversation history"/>
+                <Button fx:id="removeFriendOption" layoutX="13.0" layoutY="250.0" mnemonicParsing="false"
+                        onAction="#handleRemoveFriend" prefHeight="26.0" prefWidth="142.0"
+                        text="Remove from friend list"/>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="userFriendList" layoutX="171.0" layoutY="75.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                   minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="624.0">
+            <columns>
+                <TableColumn fx:id="usernameColumn" prefWidth="316.79998779296875" text="Username"/>
+                <TableColumn fx:id="dateColumn" prefWidth="318.3999938964844" text="Since"/>
+            </columns>
+        </TableView>
+        <Label layoutX="171.0" layoutY="48.0" prefHeight="26.0" prefWidth="116.0" text="Your friends">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="searchBarField" layoutX="307.0" layoutY="48.0" prefHeight="26.0" prefWidth="374.0"
+                   promptText="Search user..."/>
+        <Button fx:id="refreshButton" layoutX="640.0" layoutY="472.0" mnemonicParsing="false"
+                onAction="#handleRefreshButton" prefHeight="26.0" prefWidth="116.0" text="Refresh"/>
+        <Label fx:id="welcomeLabel" layoutX="211.0" layoutY="2.0" prefHeight="27.0" prefWidth="468.0"
+               textFill="#4b5254">
+            <font>
+                <Font name="System Italic" size="22.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

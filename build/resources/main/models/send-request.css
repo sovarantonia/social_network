@@ -1,0 +1,18 @@
+.root{
+    -fx-background-image: url('../images/request2.jpg');
+    -fx-background-size: cover;
+}
+.label{
+    -fx-font-family: "Lucida Calligraphy";
+    -fx-font-size: 15;
+    -fx-text-fill: #4B5254;
+
+}
+.button{
+    -fx-font-family: "Arial";
+    -fx-text-fill: inherit;
+    -fx-font-size: 13;
+}
+.text-field{
+    -fx-background-color: #EBE9E4;
+}
